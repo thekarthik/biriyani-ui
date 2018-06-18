@@ -7,16 +7,19 @@
 
 atom-text-editor[mini] {
   padding-left: @component-padding/2;
-  color: @text-color;
+  color: @base-color;
   border-radius: @component-border-radius;
   background-color: @input-background-color;
+  border: 1px solid @base-color;
 
   &.is-focused {
     background-color: darken(@input-background-color, 5%);
+    border-color: @base-fg;
+    color: @base-fg;
   }
 
   .placeholder-text {
-    color: @text-color-subtle;
+    color: @base-color;
   }
   .selection .region {
     background-color: @background-color-selected;
